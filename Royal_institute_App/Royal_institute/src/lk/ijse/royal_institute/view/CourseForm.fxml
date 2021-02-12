@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1074.0" style="-fx-background-radius: 40px; -fx-border-radius: 40px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.royal_institute.Controller.CourseFormController">
+   <children>
+      <Polygon fill="#8e69e7" layoutX="618.0" layoutY="60.0" points="-343.0, 640.0, 406.0, 107.0, 0.0, -60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Pane layoutX="618.0" prefHeight="700.0" prefWidth="456.0" style="-fx-background-color: #8e69e7; -fx-background-radius: 40px; -fx-border-radius: 40px;">
+         <children>
+            <Polygon fill="#8e69e7" layoutY="495.0" points="-343.0, 205.0, 88.0, 205.0, 0.0, -84.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8e69e7" height="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="48.0" />
+            <JFXButton fx:id="closeBtn" layoutX="407.0" layoutY="10.0" onAction="#CloseOnAction" prefHeight="35.0" prefWidth="35.0" style="-fx-background-radius: 100px; -fx-border-radius: 100px;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5111111111111111" centerY="0.4714285714285714" radius="0.5">
+                     <stops>
+                        <Stop color="#ff0505" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="410.0" layoutY="13.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/circle-cropped.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="36.0" layoutY="39.0" prefHeight="630.0" prefWidth="1000.0" style="-fx-background-color: #cfc1f1; -fx-background-radius: 40px; -fx-border-radius: 40px;">
+         <children>
+            <Pane layoutX="361.0" layoutY="14.0" prefHeight="64.0" prefWidth="327.0" styleClass="anchor2" stylesheets="@../css/style2.css">
+               <children>
+                  <Label layoutX="47.0" layoutY="16.0" text="Manage Courses" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="BackBtn" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="861.0" layoutY="17.0" onAction="#BAckOnAction" prefHeight="41.0" prefWidth="119.0" styleClass="anchor3" stylesheets="@../css/style2.css" text="Back">
+               <ripplerFill>
+                  <LinearGradient endY="0.8666666666666667" startX="0.6238095238095238" startY="1.0">
+                     <stops>
+                        <Stop color="#77e569" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="26.0" fitWidth="40.0" layoutX="870.0" layoutY="25.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-back-48.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="105.0" layoutY="187.0" text="Course Code">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCode" focusColor="#8e69e7" layoutX="264.0" layoutY="184.0" prefHeight="25.0" prefWidth="122.0" unFocusColor="BLACK" />
+            <Label layoutX="105.0" layoutY="241.0" text="Course Name">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCname" focusColor="#8e69e7" layoutX="264.0" layoutY="238.0" prefHeight="25.0" prefWidth="206.0" unFocusColor="BLACK" />
+            <Label layoutX="538.0" layoutY="186.0" text="Course Type">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCtype" focusColor="#8e69e7" layoutX="697.0" layoutY="183.0" prefHeight="25.0" prefWidth="206.0" unFocusColor="BLACK" />
+            <Label layoutX="538.0" layoutY="246.0" text="Duration">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtCduration" focusColor="#8e69e7" layoutX="697.0" layoutY="243.0" prefHeight="25.0" prefWidth="122.0" unFocusColor="BLACK" />
+            <TableView fx:id="tblcourse" layoutX="108.0" layoutY="400.0" prefHeight="200.0" prefWidth="785.0">
+              <columns>
+                <TableColumn fx:id="clmCoursecode" prefWidth="131.0" text="Course Code" />
+                <TableColumn fx:id="clmCoursename" prefWidth="229.0" text="Course Name" />
+                  <TableColumn fx:id="clmCoursetype" prefWidth="232.0" text="Course Type" />
+                  <TableColumn fx:id="clmDuration" prefWidth="176.0" text="Duration" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="76.0" fitWidth="86.0" layoutX="39.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/pngegg%20(1)2%20(1)4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="183.0" layoutX="108.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/a556d27cef35c0c6cdef84ef5c34415c.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="292.0" layoutY="359.0" onAction="#AddOnAction" text="Add">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="382.0" layoutY="359.0" onAction="#UpdateOnAction" text="Update">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="504.0" layoutY="359.0" onAction="#DeleteOnAction" text="Delete">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="621.0" layoutY="359.0" onAction="#SearchOnAction" text="Search">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnView" buttonType="RAISED" layoutX="739.0" layoutY="359.0" onAction="#ViewOnAction" text="View All">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

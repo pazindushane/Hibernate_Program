@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchor1" prefHeight="500.0" prefWidth="800.0" styleClass="anchor1" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Login2Controller">
+   <children>
+      <AnchorPane id="LoginAnc" fx:id="LoginAnc" layoutX="444.0" layoutY="67.0" prefHeight="366.0" prefWidth="311.0" styleClass="LoginAnc" stylesheets="@../css/style.css">
+         <children>
+            <Label id="fontstyle" layoutX="123.0" layoutY="24.0" styleClass="fontstyle" text="Login" textFill="WHITE" />
+            <Label id="Texts" layoutX="22.0" layoutY="114.0" styleClass="Texts" text="User Name" textFill="WHITE" />
+            <Label layoutX="25.0" layoutY="178.0" styleClass="Texts" text="Password" textFill="WHITE" />
+            <JFXTextField layoutX="132.0" layoutY="114.0" prefHeight="26.0" prefWidth="158.0" />
+            <JFXTextField layoutX="132.0" layoutY="175.0" prefHeight="26.0" prefWidth="158.0" />
+            <Label layoutX="50.0" layoutY="304.0" text="Don't have an account ?" textFill="#393939">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="201.0" layoutY="226.0" prefHeight="35.0" prefWidth="93.0" styleClass="Loginbtn" text="Login" textFill="WHITE">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#feb101" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="204.0" layoutY="300.0" styleClass="signup" text="Sign up" textFill="#ffae00">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../New%20folder%20(3)/pngegg%20(1)2%20(1)4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="330.0" fitWidth="302.0" layoutX="60.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/modern-flat-website-login-page-templates_2095-182__1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label id="logoName" layoutX="75.0" layoutY="30.0" styleClass="logoName" text="Royal Institute" textFill="#ebbe2d" />
+      <Circle fill="#feb101" layoutX="60.0" layoutY="417.0" opacity="0.59" radius="41.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#71c7f6" layoutX="101.0" layoutY="443.0" opacity="0.72" radius="41.0" stroke="WHITE" strokeType="INSIDE" />
+      <ImageView fx:id="closebtn" fitHeight="29.0" fitWidth="36.0" layoutX="755.0" layoutY="16.0" onDragDetected="#CloseOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/circle-cropped.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+.anchor1{
+    -fx-background-radius: 40px;
+    -fx-background-color: #cfc1f1;
+}
+
+.anchor2{
+    -fx-background-radius: 40px;
+    -fx-background-color:linear-gradient(#71baef, #60aaf5, #6098f7, #7382f4, #8d68e8);
+}
+
+.Loginbtn{
+    -fx-background-color: #31246C;
+    -fx-background-radius: 5px;
+    -fx-font-family: Quicksand;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.anchor3{
+    -fx-background-radius: 40px;
+    -fx-border-color:linear-gradient(#71baef, #60aaf5, #6098f7, #7382f4, #8d68e8);
+    -fx-border-radius: 40px;
+    -fx-border-width: 4px;
+
+}

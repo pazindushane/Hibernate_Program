@@ -1,0 +1,50 @@
+.LoginAnc{
+    -fx-background-color:linear-gradient(#71baef, #60aaf5, #6098f7, #7382f4, #8d68e8);
+    /*-fx-background-color: red ;*/
+    -fx-background-radius: 40px;
+}
+.fontstyle{
+    -fx-font-family: Quicksand;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+
+}
+
+.Texts{
+    -fx-font-family: Quicksand;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+.signup{
+    -fx-font-family: Quicksand;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.Loginbtn{
+    -fx-background-color: #31246C;
+    -fx-background-radius: 5px;
+    -fx-font-family: Quicksand;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.anchor1{
+    -fx-background-radius: 40px;
+    /*-fx-border-radius: 40px;*/
+}
+
+.logoName{
+    -fx-font-family:Quicksand;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+.closebutton{
+    /*-fx-border-radius: 50px;*/
+    -fx-background-radius: 100%;
+    -fx-background-image: url("../assests/circle-cropped.png");
+
+}
+
