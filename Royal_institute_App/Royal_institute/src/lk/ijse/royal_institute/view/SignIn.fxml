@@ -48,8 +48,8 @@
                         <Font name="Corbel Bold" size="17.0" />
                      </font>
                   </Label>
-                  <JFXTextField focusColor="#8e69e7" layoutX="190.0" layoutY="190.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
-                  <JFXTextField focusColor="#8e69e7" layoutX="190.0" layoutY="244.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtUsername" focusColor="#8e69e7" layoutX="190.0" layoutY="190.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtPassword" focusColor="#8e69e7" layoutX="190.0" layoutY="244.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
                   <Label layoutX="79.0" layoutY="398.0" text="Already have an account ?" textFill="#393939">
                      <font>
                         <Font size="13.0" />
@@ -81,7 +81,7 @@
                         <Font name="Corbel Bold" size="17.0" />
                      </font>
                   </Label>
-                  <JFXTextField focusColor="#8e69e7" layoutX="189.0" layoutY="294.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtConfirm" focusColor="#8e69e7" layoutX="189.0" layoutY="294.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
                   <Label layoutX="20.0" layoutY="146.0" text="Last Name" textFill="WHITE">
                      <font>
                         <Font name="Corbel Bold" size="17.0" />
@@ -92,8 +92,8 @@
                         <Font name="Corbel Bold" size="17.0" />
                      </font>
                   </Label>
-                  <JFXTextField focusColor="#8e69e7" layoutX="190.0" layoutY="137.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
-                  <JFXTextField focusColor="#8e69e7" layoutX="189.0" layoutY="88.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtLname" focusColor="#8e69e7" layoutX="190.0" layoutY="137.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtFname" focusColor="#8e69e7" layoutX="189.0" layoutY="88.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8e69e7" height="25.0" layoutX="220.0" layoutY="-87.0" stroke="#8e69e7" strokeType="INSIDE" width="46.0" />
                   <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="124.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>

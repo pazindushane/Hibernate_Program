@@ -1,6 +1,7 @@
 package lk.ijse.royal_institute.dao;
 
 import lk.ijse.royal_institute.entity.SuperEntity;
+import org.hibernate.Session;
 
 import java.io.Serializable;
 import java.util.List;
@@ -20,5 +21,7 @@ public interface SuperDAO <Entity extends SuperEntity,ID extends Serializable>{
     public Entity search(ID id) throws Exception;
 
     public List<Entity> viewAll() throws Exception;
+
+    void setSession(Session session);
 
 }

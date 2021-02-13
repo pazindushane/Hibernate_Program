@@ -1,9 +1,6 @@
 package lk.ijse.royal_institute.dao;
 
-import lk.ijse.royal_institute.dao.custom.impl.CourseDAOimpl;
-import lk.ijse.royal_institute.dao.custom.impl.QueryDAOimpl;
-import lk.ijse.royal_institute.dao.custom.impl.RegistrationDAOimpl;
-import lk.ijse.royal_institute.dao.custom.impl.StudentDAOimpl;
+import lk.ijse.royal_institute.dao.custom.impl.*;
 import lk.ijse.royal_institute.entity.Student;
 
 /**
@@ -32,6 +29,8 @@ public class DAOFactory {
                 return (T) new RegistrationDAOimpl();
             case QUERY:
                 return (T) new  QueryDAOimpl();
+            case USER:
+                return (T) new UserDAOimpl();
             default:
                 return null;
         }

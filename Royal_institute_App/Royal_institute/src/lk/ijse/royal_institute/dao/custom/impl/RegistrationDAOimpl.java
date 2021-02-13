@@ -95,4 +95,9 @@ public class RegistrationDAOimpl implements RegistrationDAO {
         session.close();
         return list;
     }
+
+    @Override
+    public void setSession(Session session) {
+
+    }
 }

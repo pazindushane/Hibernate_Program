@@ -3,6 +3,7 @@ package lk.ijse.royal_institute.util;
 import lk.ijse.royal_institute.entity.Course;
 import lk.ijse.royal_institute.entity.Registration;
 import lk.ijse.royal_institute.entity.Student;
+import lk.ijse.royal_institute.entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -19,7 +20,8 @@ public class FactoryConfiguration {
         Configuration configure = new Configuration()
                 .addAnnotatedClass(Student.class)
                 .addAnnotatedClass(Course.class)
-                .addAnnotatedClass(Registration.class);
+                .addAnnotatedClass(Registration.class)
+                .addAnnotatedClass(User.class);
         sessionFactory = configure.buildSessionFactory();
     }
 

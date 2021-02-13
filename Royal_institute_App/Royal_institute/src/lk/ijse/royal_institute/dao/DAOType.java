@@ -6,6 +6,6 @@ package lk.ijse.royal_institute.dao;
  */
 public enum DAOType {
 
-    STUDENT,COURSE,REGISTRATION,QUERY
+    STUDENT,COURSE,REGISTRATION,QUERY,USER
 
 }

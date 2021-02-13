@@ -5,5 +5,5 @@ package lk.ijse.royal_institute.bo;
  * @project Royal_institute_App <shanepazindu7399@gmail.com>
  */
 public enum BOType {
-    STUDENT,COURSE,REGISTRATION
+    STUDENT,COURSE,REGISTRATION,USER
 }

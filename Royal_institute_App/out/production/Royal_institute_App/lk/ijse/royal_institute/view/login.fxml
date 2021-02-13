@@ -53,7 +53,7 @@
                         <Font name="Corbel Bold" size="17.0" />
                      </font>
                   </Label>
-                  <JFXTextField focusColor="#8e69e7" layoutX="127.0" layoutY="128.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtUsername" focusColor="#8e69e7" layoutX="127.0" layoutY="128.0" onAction="#txtUsernameOnAction" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
                   <Label layoutX="54.0" layoutY="332.0" text="Don't have an account ?" textFill="#393939">
                      <font>
                         <Font size="13.0" />
@@ -85,7 +85,18 @@
                         <Image url="@../assests/icons8-lock-26.png" />
                      </image>
                   </ImageView>
-                  <JFXPasswordField focusColor="#8e69e7" layoutX="125.0" layoutY="190.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
+                  <JFXPasswordField fx:id="txtPassword" focusColor="#8e69e7" layoutX="125.0" layoutY="190.0" onAction="#txtPasswordOnAction" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtShowPw" focusColor="#8e69e7" layoutX="126.0" layoutY="190.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
+                  <ImageView fx:id="imgOpenEye" fitHeight="29.0" fitWidth="30.0" layoutX="262.0" layoutY="183.0" onMouseClicked="#hidepassword" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-eye-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgCloseEye" fitHeight="29.0" fitWidth="30.0" layoutX="262.0" layoutY="184.0" onMouseClicked="#Showpassword" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-closed-eye-50.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
             <ImageView fitHeight="27.0" fitWidth="183.0" layoutX="73.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">

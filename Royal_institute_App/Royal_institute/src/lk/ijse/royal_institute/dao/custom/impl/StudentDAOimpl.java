@@ -97,6 +97,11 @@ public class StudentDAOimpl implements StudentDAO {
     }
 
     @Override
+    public void setSession(Session session) {
+
+    }
+
+    @Override
     public String getLastID() throws Exception {
          session = FactoryConfiguration.getInstance().getSession();
          transaction = session.beginTransaction();

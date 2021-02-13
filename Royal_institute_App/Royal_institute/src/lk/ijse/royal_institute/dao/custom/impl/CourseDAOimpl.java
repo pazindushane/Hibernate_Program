@@ -104,4 +104,9 @@ public class CourseDAOimpl implements CourseDAO {
         session.close();
         return list;
     }
+
+    @Override
+    public void setSession(Session session) {
+
+    }
 }

@@ -16,6 +16,7 @@ import java.util.List;
  * @project Royal_institute_App <shanepazindu7399@gmail.com>
  */
 public class QueryDAOimpl implements QueryDAO {
+    Session session;
 
     @Override
     public Student getStudent(String id) throws Exception {
@@ -64,5 +65,10 @@ public class QueryDAOimpl implements QueryDAO {
     @Override
     public List viewAll() throws Exception {
         return null;
+    }
+
+    @Override
+    public void setSession(Session session) {
+        this.session = session;
     }
 }

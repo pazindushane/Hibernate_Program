@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="TrayTester">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../softwares/TrayTester.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../softwares/AnimateFX-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

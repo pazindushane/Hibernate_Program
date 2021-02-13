@@ -4,6 +4,7 @@ import lk.ijse.royal_institute.bo.custom.StudentBO;
 import lk.ijse.royal_institute.bo.custom.impl.CourseBOimpl;
 import lk.ijse.royal_institute.bo.custom.impl.RegistrationBOimpl;
 import lk.ijse.royal_institute.bo.custom.impl.StudentBOimpl;
+import lk.ijse.royal_institute.bo.custom.impl.UserBOimpl;
 
 /**
  * @author Pazindu Shane On 2/9/2021
@@ -28,6 +29,8 @@ public class BOFactory {
                 return (T) new CourseBOimpl();
             case REGISTRATION:
                 return (T) new RegistrationBOimpl();
+            case USER:
+                return (T) new UserBOimpl();
             default:
                 return null;
         }
