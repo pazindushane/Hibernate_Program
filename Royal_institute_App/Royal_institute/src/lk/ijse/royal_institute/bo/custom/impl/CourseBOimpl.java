@@ -5,7 +5,9 @@ import lk.ijse.royal_institute.dao.DAOFactory;
 import lk.ijse.royal_institute.dao.DAOType;
 import lk.ijse.royal_institute.dao.custom.impl.CourseDAOimpl;
 import lk.ijse.royal_institute.dto.CourseDTO;
+import lk.ijse.royal_institute.dto.StudentDTO;
 import lk.ijse.royal_institute.entity.Course;
+import lk.ijse.royal_institute.entity.Student;
 import lk.ijse.royal_institute.util.FactoryConfiguration;
 import org.hibernate.Session;
 
@@ -52,5 +54,12 @@ public class CourseBOimpl implements CourseBO {
                 courseDTO.getCoursename(),
                 courseDTO.getCoursetype(),
                 courseDTO.getDuration()));
+    }
+
+    @Override
+    public CourseDTO search(String value) throws Exception {
+        Course cust = courseDAOimpl.search(value);
+        return new CourseDTO(cust.getCode(), cust.getCoursename(), cust.getCoursetype(),cust.getDuration());
+
     }
 }

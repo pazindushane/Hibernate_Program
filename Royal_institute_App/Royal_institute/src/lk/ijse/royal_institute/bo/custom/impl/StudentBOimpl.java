@@ -63,7 +63,8 @@ public class StudentBOimpl implements StudentBO {
 
     @Override
     public StudentDTO search(String value) throws Exception {
-        return null;
+        Student cust = studentDAOimp.search(value);
+        return new StudentDTO(cust.getId(), cust.getName(), cust.getAddress(),cust.getContact(),cust.getDob(),cust.getGender());
     }
 
 

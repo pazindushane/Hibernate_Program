@@ -53,9 +53,11 @@ public class QueryDAOimpl implements QueryDAO {
     }
 
     @Override
-    public SuperEntity search(SuperEntity entity) throws Exception {
+    public SuperEntity search(Serializable serializable) throws Exception {
         return null;
     }
+
+
 
 
 

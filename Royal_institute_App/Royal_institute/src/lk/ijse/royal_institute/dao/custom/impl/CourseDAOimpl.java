@@ -80,24 +80,18 @@ public class CourseDAOimpl implements CourseDAO {
     }
 
     @Override
-    public Course search(Course entity) throws Exception {
-        try {
-
-            session = FactoryConfiguration.getInstance().getSession();
-
-            transaction = session.beginTransaction();
-
-            Course course=session.find(Course.class, entity.getCode());
-
-            session.getTransaction().commit();
-
-            return course;
-
-        }catch (Exception exception){
-
-        }
-        return null;
+    public Course search(String s) throws Exception {
+        session = FactoryConfiguration.getInstance().getSession();
+        transaction = session.beginTransaction();
+        Query query = session.createQuery("FROM Course WHERE code = ?1 ");
+        query.setParameter(1, s);
+        Course customer = (Course) query.uniqueResult();
+        transaction.commit();
+        session.close();
+        return customer;
     }
+
+
 
 
     @Override

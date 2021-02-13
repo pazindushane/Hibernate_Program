@@ -138,18 +138,18 @@ public class RegistrationFormController {
         clmStuId.setCellValueFactory(new PropertyValueFactory<RegistrationDTO, String>("Id"));
     }
 
-    private void getAllItems() {
-
-        try {
-            List<RegistrationDTO> itemList = registrationBOimpl.getAll();
-            ObservableList<RegistrationDTO> list = FXCollections.observableArrayList();
-            list.addAll(itemList);
-            tblCourse.setItems(list);
-            setTblProgramCellValue();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    private void getAllItems() {
+//
+//        try {
+//            List<RegistrationDTO> itemList = registrationBOimpl.getAll();
+//            ObservableList<RegistrationDTO> list = FXCollections.observableArrayList();
+//            list.addAll(itemList);
+//            tblCourse.setItems(list);
+//            setTblProgramCellValue();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     private void addValuesToCmbStudent() {
         try {

@@ -217,12 +217,11 @@ public class StudentController {
 
     public void SearchOnAction(ActionEvent actionEvent) {
         try {
-            StudentDTO studentDTO = studentBOimpl.search(TxtStudeID.getText());
+            StudentDTO customer = studentBOimpl.search(TxtStudeID.getText());
             ObservableList<StudentDTO> list = FXCollections.observableArrayList();
-            list.add(studentDTO);
+            list.add(customer);
             tblStudent.setItems(list);
             setTblItemCellValue();
-            TxtStudeID.clear();
         }  catch (Exception e) {
 
         }

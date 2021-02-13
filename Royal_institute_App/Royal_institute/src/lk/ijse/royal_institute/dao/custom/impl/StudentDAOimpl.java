@@ -1,6 +1,7 @@
 package lk.ijse.royal_institute.dao.custom.impl;
 
 import lk.ijse.royal_institute.dao.custom.StudentDAO;
+import lk.ijse.royal_institute.entity.Course;
 import lk.ijse.royal_institute.entity.Student;
 import lk.ijse.royal_institute.util.FactoryConfiguration;
 import org.hibernate.Session;
@@ -70,18 +71,17 @@ public class StudentDAOimpl implements StudentDAO {
     }
 
     @Override
-    public Student search(Student entity) throws Exception {
-        try {
-            Session session = FactoryConfiguration.getInstance().getSession();
-            session.beginTransaction();
-            Student student=session.find(Student.class, entity.getId());
-            session.getTransaction().commit();
-            return student;
-        }catch (Exception exception){
-
-        }
-        return null;
+    public Student search(String s) throws Exception {
+        session = FactoryConfiguration.getInstance().getSession();
+        transaction = session.beginTransaction();
+        Query query = session.createQuery("FROM Student WHERE id = ?1 ");
+        query.setParameter(1, s);
+        Student customer = (Student) query.uniqueResult();
+        transaction.commit();
+        session.close();
+        return customer;
     }
+
 
 
 

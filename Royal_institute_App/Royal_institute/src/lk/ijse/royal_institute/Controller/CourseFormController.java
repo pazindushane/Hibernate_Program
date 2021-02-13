@@ -184,7 +184,16 @@ public class CourseFormController {
     }
 
     public void SearchOnAction(ActionEvent actionEvent) {
-        getAllItems();
+
+        try {
+            CourseDTO customer = courseBOimpl.search(txtCode.getText());
+            ObservableList<CourseDTO> list = FXCollections.observableArrayList();
+            list.add(customer);
+            tblcourse.setItems(list);
+            setTblItemCellValue();
+        }  catch (Exception e) {
+
+        }
     }
 
     public void ViewOnAction(ActionEvent actionEvent) {

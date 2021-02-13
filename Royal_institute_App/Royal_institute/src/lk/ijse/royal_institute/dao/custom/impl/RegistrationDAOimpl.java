@@ -77,9 +77,11 @@ public class RegistrationDAOimpl implements RegistrationDAO {
     }
 
     @Override
-    public Registration search(Registration entity) throws Exception {
+    public Registration search(String s) throws Exception {
         return null;
     }
+
+
 
 
 

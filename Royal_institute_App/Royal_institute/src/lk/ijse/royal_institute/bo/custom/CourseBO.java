@@ -21,4 +21,6 @@ public interface CourseBO extends SuperBO {
     public boolean deletecourse(String id) throws Exception;
 
     public boolean updatecourse(CourseDTO courseDTO) throws Exception;
+
+    CourseDTO search(String value) throws Exception;
 }

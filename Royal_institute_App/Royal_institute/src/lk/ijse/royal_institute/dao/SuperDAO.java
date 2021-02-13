@@ -17,7 +17,7 @@ public interface SuperDAO <Entity extends SuperEntity,ID extends Serializable>{
 
     public  boolean update(Entity entity) throws Exception;
 
-    public Entity search(Entity entity) throws Exception;
+    public Entity search(ID id) throws Exception;
 
     public List<Entity> viewAll() throws Exception;
 
