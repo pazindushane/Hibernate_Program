@@ -82,12 +82,12 @@
                      </font>
                   </Label>
                   <JFXTextField fx:id="txtConfirm" focusColor="#8e69e7" layoutX="189.0" layoutY="294.0" prefHeight="25.0" prefWidth="166.0" unFocusColor="WHITE" />
-                  <Label layoutX="20.0" layoutY="146.0" text="Last Name" textFill="WHITE">
+                  <Label layoutX="20.0" layoutY="146.0" text="Full Name" textFill="WHITE">
                      <font>
                         <Font name="Corbel Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label layoutX="19.0" layoutY="93.0" text="First Name" textFill="WHITE">
+                  <Label layoutX="19.0" layoutY="93.0" text="User ID" textFill="WHITE">
                      <font>
                         <Font name="Corbel Bold" size="17.0" />
                      </font>

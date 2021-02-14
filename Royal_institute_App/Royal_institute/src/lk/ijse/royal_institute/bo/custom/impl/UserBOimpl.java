@@ -65,4 +65,12 @@ public class UserBOimpl implements UserBO {
                 userDTO.getUsername(),
                 userDTO.getPassword()));
     }
+
+    @Override
+    public boolean updateuser(UserDTO userDTO) throws Exception {
+        return userDAOimpl.update(new User(userDTO.getFname(),
+                userDTO.getLname(),
+                userDTO.getUsername(),
+                userDTO.getPassword()));
+    }
 }

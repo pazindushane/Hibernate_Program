@@ -6,7 +6,7 @@ package lk.ijse.royal_institute.dto;
  */
 public class UserDTO {
 
-    private String fname;
+    private String UId;
     private String lname;
     private String username;
     private String password;
@@ -14,19 +14,19 @@ public class UserDTO {
     public UserDTO() {
     }
 
-    public UserDTO(String fname, String lname, String username, String password) {
-        this.fname = fname;
+    public UserDTO(String UId, String lname, String username, String password) {
+        this.UId = UId;
         this.lname = lname;
         this.username = username;
         this.password = password;
     }
 
     public String getFname() {
-        return fname;
+        return UId;
     }
 
     public void setFname(String fname) {
-        this.fname = fname;
+        this.UId = fname;
     }
 
     public String getLname() {
@@ -56,7 +56,7 @@ public class UserDTO {
     @Override
     public String toString() {
         return "UserDTO{" +
-                "fname='" + fname + '\'' +
+                "UId='" + UId + '\'' +
                 ", lname='" + lname + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +

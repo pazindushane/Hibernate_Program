@@ -7,6 +7,8 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -18,7 +20,7 @@
       <Pane layoutX="446.0" prefHeight="475.0" prefWidth="325.0" style="-fx-background-color: #8e69e7; -fx-background-radius: 40px; -fx-border-radius: 40px;">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8e69e7" height="27.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="46.0" />
-            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="278.0" layoutY="16.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="278.0" layoutY="16.0" mouseTransparent="true" onDragDetected="#CloseOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assests/circle-cropped.png" />
                </image>
@@ -91,6 +93,28 @@
                   <Font name="Corbel Bold" size="20.0" />
                </font>
             </Label>
+            <JFXButton buttonType="RAISED" layoutX="568.0" layoutY="27.0" prefHeight="45.0" prefWidth="52.0" ripplerFill="#ff0707" style="-fx-background-radius: 100%; -fx-border-radius: 100%;" text=" " />
+            <JFXButton fx:id="Btnrest" buttonType="RAISED" layoutX="579.0" layoutY="8.0" onAction="#BtnrestOnAction" prefHeight="57.0" prefWidth="59.0" style="-fx-background-radius: 100px; -fx-border-radius: 100px;" text=" ">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5055555555555555" centerY="0.4952380952380953" radius="0.5">
+                     <stops>
+                        <Stop color="#00aaff" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="591.0" layoutY="19.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-settings.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

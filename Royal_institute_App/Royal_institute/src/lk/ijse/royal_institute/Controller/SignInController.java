@@ -30,6 +30,7 @@ public class SignInController {
     public JFXTextField txtConfirm;
     public JFXTextField txtLname;
     public JFXTextField txtFname;
+
     UserBOimpl userBOimpl = BOFactory.getInstance().getBO(BOType.USER);
 
     public void CloseOnAction(ActionEvent actionEvent) {
@@ -92,4 +93,6 @@ public class SignInController {
             e.printStackTrace();
         }
     }
+
+
 }

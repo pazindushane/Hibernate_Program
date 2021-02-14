@@ -11,17 +11,17 @@ import javax.persistence.Id;
 public class User implements SuperEntity {
 
     @Id
-    private String fname;
+    private String UId;
     private String lname;
     private String username;
     private String password;
 
     public String getFname() {
-        return fname;
+        return UId;
     }
 
     public void setFname(String fname) {
-        this.fname = fname;
+        this.UId = fname;
     }
 
     public String getLname() {
@@ -48,8 +48,8 @@ public class User implements SuperEntity {
         this.password = password;
     }
 
-    public User(String fname, String lname, String username, String password) {
-        this.fname = fname;
+    public User(String UId, String lname, String username, String password) {
+        this.UId = UId;
         this.lname = lname;
         this.username = username;
         this.password = password;
@@ -58,7 +58,7 @@ public class User implements SuperEntity {
     @Override
     public String toString() {
         return "User{" +
-                "fname='" + fname + '\'' +
+                "UId='" + UId + '\'' +
                 ", lname='" + lname + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +

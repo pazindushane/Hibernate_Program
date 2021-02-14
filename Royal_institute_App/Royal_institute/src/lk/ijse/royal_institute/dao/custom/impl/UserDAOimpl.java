@@ -54,7 +54,17 @@ public class UserDAOimpl implements UserDAO {
 
     @Override
     public boolean update(User entity) throws Exception {
-        return false;
+        session = FactoryConfiguration.getInstance().getSession();
+
+        transaction = session.beginTransaction();
+
+        session.update(entity);
+
+        transaction.commit();
+
+        session.close();
+
+        return true;
     }
 
     @Override

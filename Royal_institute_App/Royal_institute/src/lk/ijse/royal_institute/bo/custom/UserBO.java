@@ -14,4 +14,6 @@ public interface UserBO extends SuperBO {
     void update(UserDTO userDTO) throws Exception;
 
     public boolean adduser(UserDTO userDTO) throws Exception;
+
+    public boolean updateuser(UserDTO userDTO) throws Exception;
 }

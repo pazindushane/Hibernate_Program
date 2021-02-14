@@ -17,6 +17,7 @@ public class DashboardController {
     public JFXButton Coursebtn;
     public JFXButton addStudentbtn;
     public JFXButton regiterbtn;
+    public JFXButton Btnrest;
 
     public void CourseOnAction(ActionEvent actionEvent) throws IOException {
 
@@ -57,5 +58,21 @@ public class DashboardController {
         Stage primaryStage= (Stage) regiterbtn.getScene().getWindow();
         primaryStage.close();
 
+    }
+
+    public void CloseOnAction(ActionEvent actionEvent) {
+
+        System.exit(0);
+    }
+
+    public void BtnrestOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("../view/ResetPassword.fxml"))));
+        stage.setResizable(false);
+        stage.initStyle(StageStyle.TRANSPARENT);
+        stage.show();
+
+        Stage primaryStage= (Stage) Btnrest.getScene().getWindow();
+        primaryStage.close();
     }
 }
